@@ -19,3 +19,11 @@ libraryDependencies ++= Seq(
   "com.typesafe.play" % "play-cache_2.12" % playVersion,
   "commons-io" % "commons-io" % "2.4"
 )
+
+
+libraryDependencies ++= Seq(
+  javaWs
+)
+libraryDependencies += ehcache
+
+routesGenerator := InjectedRoutesGenerator

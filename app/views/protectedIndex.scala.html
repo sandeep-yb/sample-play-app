@@ -1,12 +1,14 @@
 @(profileList: java.util.List[org.pac4j.core.profile.CommonProfile])
 @import scala.collection.JavaConverters._
 @profiles() = { @profileList.toList }
-<h1>Protected Area</h1>
+<h1>You are now signed in</h1>
 <a href="..">Back</a>
 <ul>
     <li><a href="/logout?url=/?forcepostlogouturl">Local logout</a></li>
     <li><a href="/centralLogout?url=http://localhost:9000/?forcepostlogouturlafteridp">Central logout</a></li>
 </ul>
+
+<h1>The user profile info we have</h1>
 
 <p>
     profiles: @profiles
