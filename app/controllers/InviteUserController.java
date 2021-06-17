@@ -80,7 +80,7 @@ final Logger log = LoggerFactory.getLogger(this.getClass());
     CompletionStage<JsonNode> jsonNode =  
     ws.url("https://yugabyte-aakumar-poc.okta.com/api/v1/users?activate=true")
           .addHeader("Content-Type", "application/json")
-          .addHeader("Authorization", "SSWS 00RQzCaQY8mCInIXqCXflk4MjQxpxXPl9ftUc9SEhp")
+          .addHeader("Authorization", "")
           .addHeader("Accept", "application/json")
           .post(requestBody)
           .thenApply(result -> result.getBody(WSBodyReadables.instance.json()));
@@ -102,7 +102,7 @@ final Logger log = LoggerFactory.getLogger(this.getClass());
 
         //        return  ws.url("https://yugabyte-aakumar-poc.okta.com/api/v1/apps/0oath4l92O99k63ES5d6/users")
         //   .addHeader("Content-Type", "application/json")
-        //   .addHeader("Authorization", "SSWS 00RQzCaQY8mCInIXqCXflk4MjQxpxXPl9ftUc9SEhp")
+        //   .addHeader("Authorization", "")
         //   .addHeader("Accept", "application/json")
         //  .post(requestBody2)
         //   .thenApply(response -> response.getBody(WSBodyReadables.instance.json()));
@@ -136,7 +136,7 @@ final Logger log = LoggerFactory.getLogger(this.getClass());
 
           // return ws.url("https://yugabyte-aakumar-poc.okta.com/api/v1/apps/0oath4l92O99k63ES5d6/users")
           // .addHeader("Content-Type", "application/json")
-          // .addHeader("Authorization", "SSWS 00RQzCaQY8mCInIXqCXflk4MjQxpxXPl9ftUc9SEhp")
+          // .addHeader("Authorization", "")
           // .addHeader("Accept", "application/json")
           // .post(requestBody2)
           // .thenApply(response -> ok(response.asJson()));
@@ -144,7 +144,7 @@ final Logger log = LoggerFactory.getLogger(this.getClass());
   //log.info(requestBody2.toString());
        CompletionStage<JsonNode> jsonNode2= ws.url("https://yugabyte-aakumar-poc.okta.com/api/v1/apps/0oath4l92O99k63ES5d6/users")
           .addHeader("Content-Type", "application/json")
-          .addHeader("Authorization", "SSWS 00RQzCaQY8mCInIXqCXflk4MjQxpxXPl9ftUc9SEhp")
+          .addHeader("Authorization", "")
           .addHeader("Accept", "application/json")
           .post(requestBody2)
           .thenApply(response -> response.getBody(WSBodyReadables.instance.json()));  
